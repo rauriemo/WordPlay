@@ -28,14 +28,23 @@
 }
 
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender {
-//    EnterAdjectiveViewController *destination = segue.destinationViewController;
-//    
-//    destination.
-//    
-//    destination.name = self.nameTextField.text;
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if (self.nameTextField.text.length >0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender {
+    EnterAdjectiveViewController *destination = segue.destinationViewController;
+    
+    destination.name = self.nameTextField.text;
+
+}
+
+
 
 
 @end

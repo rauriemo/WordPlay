@@ -1,21 +1,21 @@
 //
-//  EnterAdjectiveViewController.m
+//  EnterNounViewController.m
 //  
 //
 //  Created by Rafael Auriemo on 1/11/16.
 //
 //
 
-#import "EnterAdjectiveViewController.h"
 #import "EnterNounViewController.h"
+#import "SillyWordViewController.h"
 
-@interface EnterAdjectiveViewController ()
+@interface EnterNounViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *adjectiveTextField;
+@property (weak, nonatomic) IBOutlet UITextField *nounTextField;
 
 @end
 
-@implementation EnterAdjectiveViewController
+@implementation EnterNounViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,23 +28,22 @@
 }
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    if (self.adjectiveTextField.text.length >0) {
-        
+    if (self.nounTextField.text.length >0) {
         return true;
     }
-    
     else {
         return false;
     }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    EnterNounViewController *destination = segue.destinationViewController;
     
-    destination.adjective = self.adjectiveTextField.text;
+    SillyWordViewController *destination = segue.destinationViewController;
     
-    destination.name = self.name; 
-  
+    destination.name = self.name;
+    destination.adjective = self.adjective;
+    destination.noun = self.nounTextField.text;
+    
 }
 
 

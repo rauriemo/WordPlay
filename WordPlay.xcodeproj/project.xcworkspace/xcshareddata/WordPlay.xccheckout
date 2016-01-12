@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>423470B8-D55C-48EB-8927-E21A44AEBE27</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2EF7169CD960998D2829A7C7E64092FFA8FEF606</key>
+		<string>https://github.com/rauriemo/WordPlay.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WordPlay.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2EF7169CD960998D2829A7C7E64092FFA8FEF606</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rauriemo/WordPlay.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2EF7169CD960998D2829A7C7E64092FFA8FEF606</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2EF7169CD960998D2829A7C7E64092FFA8FEF606</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WordPlay</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -19,7 +19,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.resultsTextView.text = [NSString stringWithFormat:@"%@ is super awesome because they are %@", self.name, self.adjectives];
+    NSArray *mutArray= @[self.name, @" is partial to ", self.noun, @", and is super awesome because they are ", self.adjective, @". ", self.sillyWord, @"!" ];
+    
+    
+    NSAttributedString *message;
+    NSMutableAttributedString *mutMessage = [[NSMutableAttributedString alloc] init];
+    for (int i=0; i<mutArray.count; i++) {
+        if (i%2 != 0) {
+            //append
+            message = [[NSAttributedString alloc] initWithString:mutArray[i] attributes:nil];
+            [mutMessage appendAttributedString:message];
+        }else{
+            //bold then append
+            message = [[NSAttributedString alloc] initWithString:mutArray[i] attributes:@{ NSFontAttributeName: [UIFont boldSystemFontOfSize:18.0] }];
+            [mutMessage appendAttributedString:message];
+        }
+    }
+    
+    [self.resultsTextView setAttributedText:mutMessage];
 }
 
 - (void)didReceiveMemoryWarning {
