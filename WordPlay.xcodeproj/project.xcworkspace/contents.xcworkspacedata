@@ -2,6 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../ResultsViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:../ResultsViewController.m">
+   </FileRef>
+   <FileRef
+      location = "group:../WordPlay/EnterAdjectiveViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:../WordPlay/EnterAdjectiveViewController.m">
+   </FileRef>
+   <FileRef
+      location = "group:../EnterNameViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:../EnterNameViewController.m">
+   </FileRef>
+   <FileRef
       location = "self:WordPlay.xcodeproj">
    </FileRef>
 </Workspace>
